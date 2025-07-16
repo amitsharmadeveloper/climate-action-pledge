@@ -1,0 +1,553 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .favicon{
+    height:350px;
+  }
+  /* Hero Section */
+  .hero {
+    background-attachment: fixed;
+    min-height: 25vh;
+    padding: 0 20px;
+  }
+  
+  
+  .hero-content {
+    padding: 0;
+    text-align: center;
+    color: #2e7d32;
+    margin-top: 50px;
+  }
+  
+  .hero-content h1 {
+    font-size: 2.5rem;
+    color: black;
+  }
+  
+  .hero-content p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: black; 
+  }
+  
+  .cta-btn {
+    display: inline-block;
+    margin-top: 20px;
+    background-color: #00c853;
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  }
+  
+  .cta-btn:hover {
+    background-color: #009624;
+  }
+
+  /* KPI */
+  .kpi-section {
+    background-color: #f0f9f4;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .kpi-section h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #2e7d32;
+  }
+  
+  .kpi-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .kpi-card {
+    background-color: white;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%; 
+    max-width: 300px; 
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  
+  .kpi-card h3 {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    color: #333;
+  }
+  
+  .kpi-card p {
+    font-size: 1.5rem;
+    color: #00c853;
+    font-weight: bold;
+  }
+
+  /* climate action */
+  .why-section {
+    background-color: #e8f5e9; /* light green background */
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .why-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .why-content h2 {
+    font-size: 2rem;
+    color: #2e7d32;
+    margin-bottom: 20px;
+  }
+  
+  .why-content p {
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+   
+  /* pledge form */
+  .form-section {
+    background-color: #f1f8e9;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .form-section h2 {
+    color: #33691e;
+    margin-bottom: 10px;
+  }
+  
+  .form-subtext {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 30px;
+  }
+  
+  form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    text-align: left;
+  }
+  
+  label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+  }
+  
+  .radio-group {
+    margin-top: 10px;
+  }
+  
+  .radio-group label {
+    margin-right: 20px;
+  }
+  
+  .privacy-note {
+    font-size: 0.85rem;
+    color: #777;
+    margin-top: 8px;
+  }
+  
+  fieldset {
+    margin-top: 25px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+  }
+  
+  .checkbox-group label {
+    display: block;
+    margin: 8px 0;
+    font-weight: normal;
+  }
+  
+  .button-wrapper {
+    margin-top: 30px;
+    text-align: left;
+  }
+  
+  button[type="submit"] {
+    padding: 12px 24px;
+    background-color: #00c853;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #009624;
+  }
+  
+  /* certificate generator */
+  .certificate {
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 30px;
+    border: 2px solid #00c853;
+    border-radius: 12px;
+    background-color: #e8f5e9;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .certificate p {
+    font-size: 1.9rem;
+    color: #333;
+    margin: 5px 15px;
+  
+  }
+  
+  .certificate .stars {
+    color: red;
+    font-size: 1.5rem;
+    margin-top: 10px;
+  }
+  
+  .rating {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #2e7d32;
+    margin-top: 15px;
+  }
+
+  /* public pledge wall */
+  .pledge-wall {
+    padding: 60px 20px;
+    background-color: #f9fbe7;
+    text-align: center;
+  }
+  
+  .pledge-wall h2 {
+    margin-bottom: 25px;
+    color: #33691e;
+  }
+  
+  #pledgeTable {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  #pledgeTable th,
+  #pledgeTable td {
+    padding: 12px 16px;
+    border: 1px solid #ddd;
+    text-align: center;
+    font-size: 0.95rem;
+  }
+  
+  #pledgeTable th {
+    background-color: #e0f2f1;
+    color: #004d40;
+  }
+  
+  /* privacy section */
+  .privacy-note-section {
+    background-color: #f1f8e9;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.95rem;
+    color: #4e4e4e;
+    margin-top: 30px;
+  }
+  
+/* For Tablets and mobile*/
+@media screen and (max-width: 1080px) and (min-width: 768px) {
+    .hero-content {
+      padding: 30px;
+    }
+  
+    .hero-content h1 {
+      font-size: 2rem;
+    }
+  
+    .hero-content p {
+      font-size: 1.1rem;
+    }
+  
+    .cta-btn {
+      font-size: 1rem;
+      padding: 10px 20px;
+    }
+
+    form {
+        padding: 30px;
+      }
+    
+      .form-section {
+        padding: 40px 15px;
+      }
+    
+      fieldset {
+        padding: 15px;
+      }
+    
+      button[type="submit"] {
+        width: auto;
+      }
+  }
+  
+  /* For Mobiles*/
+  @media screen and (max-width: 767px) {
+    .hero {
+      background-position: center center;
+      padding: 0 10px;
+    }
+  
+    .hero-content {
+      padding: 20px;
+      border-radius: 8px;
+    }
+  
+    .hero-content h1 {
+      font-size: 1.5rem;
+    }
+  
+    .hero-content p {
+      font-size: 1rem;
+    }
+  
+    .cta-btn {
+      font-size: 0.9rem;
+      padding: 8px 16px;
+    }
+
+    .kpi-cards {
+        flex-direction: column;
+        align-items: center;
+      }
+    
+      form {
+        padding: 20px;
+      }
+    
+      .form-section {
+        padding: 30px 10px;
+      }
+    
+      .radio-group label,
+      .checkbox-group label {
+        display: block;
+        font-size: 0.95rem;
+      }
+    
+      input[type="text"],
+      input[type="email"],
+      input[type="tel"] {
+        font-size: 0.95rem;
+      }
+    
+      button[type="submit"] {
+        width: 100%; 
+        font-size: 1rem;
+        padding: 12px;
+      }
+    
+      fieldset {
+        padding: 15px;
+        font-size: 0.95rem;
+      }
+      
+      .certificate {
+        padding: 18px;
+        margin: 16px auto;
+        width: 85%;
+      }
+
+      #pledgeTable th,
+     #pledgeTable td {
+       font-size: 0.85rem;
+       padding: 4px 10px;
+     }
+
+     .pledge-wall h2 {
+       font-size: 1.3rem;
+     }
+     #pledgeTable{
+        margin-right:10px;
+     }
+  }
+   
+  /*for mobile exact 420 and less than*/
+  @media screen and (max-width: 420px) {
+    .hero {
+      padding: 20px 8px;
+      background-position: center;
+      background-attachment: scroll;
+      min-height: 25vh;
+    }
+  
+    .hero-content {
+      padding: 16px;
+      border-radius: 10px;
+      width: 100%;
+      max-width: 340px;
+      margin-top: 40px;
+    }
+  
+    .hero-content h1 {
+      font-size: 1.2rem;
+    }
+  
+    .hero-content p {
+      font-size: 0.9rem;
+    }
+  
+    .cta-btn {
+      font-size: 0.85rem;
+      padding: 10px 16px;
+      width: 100%;
+      text-align: center;
+    }
+  
+    .kpi-section {
+      padding: 20px 10px;
+    }
+  
+    .kpi-cards {
+      flex-direction: column;
+      align-items: center;
+      margin-left: 40px;
+      margin-right: 40px;
+    }
+  
+    .kpi-card h3 {
+      font-size: 1rem;
+    }
+  
+    .kpi-card p {
+      font-size: 1.2rem;
+    }
+  
+    .form-section {
+      padding: 20px 10px;
+    }
+  
+    form {
+      padding: 16px;
+      max-width: 340px;
+    }
+  
+    label,
+    .radio-group label,
+    .checkbox-group label {
+      font-size: 0.85rem;
+    }
+  
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"] {
+      padding: 8px;
+      font-size: 0.9rem;
+    }
+  
+    fieldset {
+      padding: 12px;
+    }
+  
+    button[type="submit"] {
+      width: 100%;
+      padding: 12px;
+      font-size: 1rem;
+    }
+  
+    .why-section {
+      padding: 20px 10px;
+    }
+  
+    .why-content h2 {
+      font-size: 1.4rem;
+    }
+  
+    .why-content p {
+      font-size: 0.9rem;
+    }
+  
+    .pledge-wall {
+      padding: 20px 10px;
+    }
+  
+    .pledge-wall h2 {
+      font-size: 1.2rem;
+    }
+  
+    #pledgeTable {
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      table-layout: fixed;
+    }
+  
+    #pledgeTable th,
+    #pledgeTable td {
+      font-size: 0.75rem;
+      /*padding: 6px;*/
+      word-wrap: break-word;
+      white-space: normal;
+    }
+  
+    .certificate {
+      padding: 18px;
+      margin: 16px auto;
+      width: 95%;
+    }
+  
+    .certificate h3 {
+      font-size: 1.3rem;
+    }
+  
+    .certificate p,
+    .rating {
+      font-size: 0.95rem;
+    }
+  
+    .privacy-note-section {
+      padding: 14px;
+      font-size: 0.8rem;
+    }
+  }
+  
+  

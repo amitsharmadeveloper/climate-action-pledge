@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/images/website_favicon.png" class="favicon" type="image/png">
+    <title>Climate Action Pledge</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <h1>Take the Climate Action Pledge</h1>
+            <p>Your small step can lead to a global impact</p>
+            <a href="#pledge-form" class="cta-btn">Take the Pledge</a>
+        </div>
+    </section>
+
+    <!-- KPI -->
+    <section class="kpi-section">
+        <h2>Our Climate Impact So Far</h2>
+        <div class="kpi-cards">
+
+            <div class="kpi-card">
+                <h3>Target Pledges</h3>
+                <p id="targetPledges">1,000,000</p>
+            </div>
+
+            <div class="kpi-card">
+                <h3>Achieved Pledges</h3>
+                <p id="achievedPledges">0</p>
+            </div>
+
+            <div class="kpi-card">
+                <h3>Students</h3>
+                <p id="studentCount">0</p>
+            </div>
+
+            <div class="kpi-card">
+                <h3>Professionals</h3>
+                <p id="professionalCount">0</p>
+            </div>
+
+            <div class="kpi-card">
+                <h3>Workshops</h3>
+                <p id="workshopCount">0</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- climate action -->
+    <section class="why-section">
+        <div class="why-content">
+            <h2>Why Take Climate Action?</h2>
+            <p>
+                We believe even the smallest change in our daily routine—like turning off unused lights or avoiding
+                plastic—can actually make a difference.
+                If all of us start doing our bit, together we can build something truly powerful for the planet we all
+                share.
+            </p>
+            <p>
+                Lets be the change that pushes others to care too. When one person acts, it inspires many more. So why
+                not start with us?
+            </p>
+        </div>
+    </section>
+
+    <!-- pledge section -->
+    <section id="pledge-form" class="form-section">
+        <h2>Take the Climate Action Pledge</h2>
+        <p class="form-subtext">
+            It only takes a minute to commit to a better planet
+        </p>
+
+        <form id="pledgeForm">
+
+            <label for="name">Full Name *</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mobile">Mobile Number *</label>
+            <input type="tel" id="mobile" name="mobile" required pattern="[0-9]{10}">
+
+            <p class="privacy-note">Your email and mobile will never be shown publicly. Used only for verification.</p>
+
+            <label for="state">Your State</label>
+            <input type="text" id="state" name="state">
+
+            <label>Profile Type *</label>
+            <div class="radio-group">
+                <label><input type="radio" name="profile" value="Student" required> Student</label>
+                <label><input type="radio" name="profile" value="Working Professional" required> Working
+                    Professional</label>
+                <label><input type="radio" name="profile" value="Other" required> Other</label>
+            </div>
+
+            <fieldset>
+                <legend><strong>Select Your Climate Commitments:</strong></legend>
+
+                <div class="checkbox-group">
+                    <strong>Energy Use</strong><br>
+                    <label><input type="checkbox" name="commitments" value="Switch off unused lights"> Switch off unused
+                        lights</label>
+                    <label><input type="checkbox" name="commitments" value="Use energy-efficient appliances"> Use
+                        energy-efficient appliances</label>
+                    <label><input type="checkbox" name="commitments" value="Use natural light during the day"> Use
+                        natural light during the day</label>
+
+                    <strong>Waste Management</strong><br>
+                    <label><input type="checkbox" name="commitments" value="Avoid single-use plastics"> Avoid single-use
+                        plastics</label>
+                    <label><input type="checkbox" name="commitments" value="Segregate waste"> Segregate waste</label>
+                    <label><input type="checkbox" name="commitments" value="Compost food waste"> Compost food
+                        waste</label>
+
+                    <strong>Sustainable Living</strong><br>
+                    <label><input type="checkbox" name="commitments" value="Walk or cycle more"> Walk or cycle
+                        more</label>
+                    <label><input type="checkbox" name="commitments" value="Use public transport"> Use public
+                        transport</label>
+                    <label><input type="checkbox" name="commitments" value="Buy local products"> Buy local
+                        products</label>
+                </div>
+            </fieldset>
+
+            <div class="button-wrapper">
+                <button type="submit">Submit Pledge</button>
+            </div>
+
+        </form>
+    </section>
+    <div id="certificate" class="certificate" style="display: none;"></div>
+    
+    <!-- public pledge wall-->
+    <section id="pledge-wall" class="pledge-wall">
+        <h2>Public Pledge Wall</h2>
+        <table id="pledgeTable">
+            <thead>
+                <tr>
+                    <th>Pledge ID</th>
+                    <th>Name</th>
+                    <th>Date</th>
+                    <th>State</th>
+                    <th>Profile</th>
+                    <th>Impact Rating</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Pledges will be added here dynamically -->
+            </tbody>
+        </table>
+    </section>
+    
+    <section class="privacy-note-section">
+        <p>
+            <strong>Privacy Note:</strong> Mobile number and email are required for validation but never shown publicly. data is used only for verification and engagement 
+        </p>
+    </section>
+      
+    <script src="script.js"></script>
+</body>
+</html> 
